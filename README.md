@@ -24,17 +24,17 @@
 
 ## 📂 项目结构与知识库配置
 
-### 1. 目录树结构 (Project Structure)
-
+### 目录结构 (Project Structure)
 ```text
 consultant/
 ├── 📂 src/main/resources/
 │   └── 📂 content/
 │       ├── 📄 qkd_protocol_v1.pdf       # 核心科研文献 (PDF)
 │       ├── 📄 qkd_protocol_v2.pdf       # 仿真环境参考 (PDF)
-│       └── 📝 file_mapping_index.txt    # 【关键】文献与本地代码映射索引说明
+│       └── 📝 file_mapping_code.txt    # 【关键】文献与本地代码映射索引说明
 └── ...
-### 2. 文献与本地代码映射索引说明
+
+file_mapping_code.txt文献与本地代码映射索引说明：
 # 文献文件名            | 本地代码存储路径（挂载点）             
 qkd_sns_protocol.pdf   | E:/Matlab_Workspace/SNS_Project/      
 tf_qkd_theory.pdf      | E:/Matlab_Workspace/TF_QKD_Library/   
