@@ -1,9 +1,8 @@
-# --- IDE 垃圾文件 ---
 .idea/
 target/
 *.iml
 
-# --- 核心过滤：RAG 知识库文献 ---
+# --- 本地知识库文献 ---
 src/main/resources/content/
 *.pdf
 *.txt
