@@ -1,9 +1,16 @@
 # 🤖 Self-Healing Sci-Agent 
 ### 基于大模型自愈机制的自动化科研仿真智能体
-**Self-Healing Sci-Agent** 是一款专为科研仿真设计的智能助手。它不仅能通过 RAG（检索增强生成）深度解析学术文献，更能通过 **Agent 反射机制** 自动生成 MATLAB 仿真代码。
-其核心亮点在于具备“代码自愈”能力——当生成的仿真代码运行出错时，系统能自动捕获报错日志并驱动 LLM 进行自主修复，直到任务成功。
----
 
+[![Java](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-green.svg)](https://spring.io/projects/spring-boot)
+[![LangChain4j](https://img.shields.io/badge/AI-LangChain4j-blue.svg)](https://github.com/langchain4j/langchain4j)
+[![MATLAB](https://img.shields.io/badge/Simulation-MATLAB-darkblue.svg)](https://www.mathworks.com/products/matlab.html)
+
+**Self-Healing Sci-Agent** 是一款面向科研仿真场景的智能化助手。它深度集成了 **RAG（检索增强生成）** 与 **Agent 反射机制**，核心解决“科研文献理论到仿真代码落地”的转化难题。
+
+**🚀 项目核心亮点：** 具备 **代码自愈（Self-Healing）** 能力。当生成的仿真代码在本地运行报错时，系统能实时捕获并分析 `stderr` 堆栈日志，驱动 LLM 自动修正逻辑并重新执行，直至任务成功。
+
+---
 ## 🌟 核心特性 (Core Features)
 
 * **📚 智能化知识检索 (RAG)：** 支持对 `content` 目录下 PDF 文献的深度索引。通过向量化技术，Agent 能精准定位协议细节，为代码生成提供理论支撑。
