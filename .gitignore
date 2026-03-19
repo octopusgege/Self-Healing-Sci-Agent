@@ -1,0 +1,18 @@
+# --- IDE 垃圾文件 ---
+.idea/
+target/
+*.iml
+
+# --- 核心过滤：RAG 知识库文献 ---
+src/main/resources/content/
+*.pdf
+*.txt
+*.log
+
+# --- MATLAB 临时文件 ---
+wrapper.m
+simulation_result.png
+qkd_embeddings_cache.json
+
+# --- 系统文件 ---
+.DS_Store

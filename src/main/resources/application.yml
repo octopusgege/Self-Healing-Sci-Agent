@@ -1,0 +1,59 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: YOUR_ALIYUN_API_KEY_HERE  # 请在此处填入你的阿里云 API Key
+      model-name: qwen-plus
+      log-requests: true
+      log-responses: true
+    streaming-chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: YOUR_ALIYUN_API_KEY_HERE  # 请在此处填入你的阿里云 API Key
+      model-name: qwen-plus
+      log-requests: true
+      log-responses: true
+    embedding-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: YOUR_ALIYUN_API_KEY_HERE  # 请在此处填入你的阿里云 API Key
+      model-name: text-embedding-v4
+      log-requests: true
+      log-responses: true
+      max-segments-per-batch: 10
+
+logging:
+  level:
+    dev.langchain4j: debug
+
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB      # 单个文件最大 50MB
+      max-request-size: 100MB  # 请求最大 100MB
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: YOUR_REDIS_PASSWORD_HERE  # 如果本地 Redis 没有密码，请留空或删除此行
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/qkd_agent?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: YOUR_MYSQL_PASSWORD_HERE    # 请在此处填入本地 MySQL 的 root 密码
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+# QKD 知识库与本地沙箱配置
+qkd:
+  knowledge:
+    base-dir: ./knowledge-base  # 文献存储目录
+    chunk-size: 500             # 文档分块大小
+    chunk-overlap: 100          # 分块重叠大小
+  matlab:
+    output-dir: E:/Matlab结果/Agent/  # 自动生成的 MATLAB 脚本存储目录
+    executable: matlab          # MATLAB 可执行文件路径
