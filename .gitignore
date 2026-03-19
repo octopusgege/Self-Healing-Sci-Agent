@@ -6,9 +6,8 @@ target/
 # --- 核心过滤：RAG 知识库文献 ---
 src/main/resources/content/
 *.pdf
-*.txt
 *.log
-
+README.txt
 # --- MATLAB 临时文件 ---
 wrapper.m
 simulation_result.png
