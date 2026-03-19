@@ -1,5 +1,5 @@
 # 🤖 Self-Healing Sci-Agent 
-### 基于大模型自愈机制的自动化科研仿真智能体
+### 基于大模型的自动化科研仿真智能体
 
 [![Java](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-green.svg)](https://spring.io/projects/spring-boot)
