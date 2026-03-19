@@ -29,8 +29,8 @@
 consultant/
 ├── 📂 src/main/resources/
 │   └── 📂 content/
-│       ├── 📄 qkd_protocol_v1.pdf       # 核心科研文献 (PDF)
-│       ├── 📄 qkd_protocol_v2.pdf       # 仿真环境参考 (PDF)
+│       ├── 📄 qkd_protocol_v1.pdf       # 科研文献 (PDF)
+│       ├── 📄 qkd_protocol_v2.pdf       # 科研文献 (PDF)
 │       └── 📝 file_mapping_code.txt    # 【关键】文献与本地代码映射索引说明
 └── ...
 
