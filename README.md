@@ -22,9 +22,9 @@
 
 ---
 
-## 📂 项目结构与知识库配置
+## 📂 知识库配置
 
-### 目录结构 (Project Structure)
+### 知识库结构 (Project Structure)
 ```text
 consultant/
 ├── 📂 src/main/resources/
